@@ -64,6 +64,10 @@ roomController.assign = async (req, res) => {
       return res
         .status(httpStatus.BAD_REQUEST)
         .json({ message: "room not found" });
+    }else if(room.isBooked)
+    {
+      return res.status(httpStatus.BAD_REQUEST)
+      .json({ message: "room already booked!" });
     }
     
     room.bookings.push(req.params.bookingID)
