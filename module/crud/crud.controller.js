@@ -68,6 +68,7 @@ userController.register = async (req, res, next) => {
                   country: req.body.country,
                   phone: req.body.phone,
                   email: req.body.email,
+                  role: req.body.role,
                   password: hash,
                   activation_key: activation,
                 });
