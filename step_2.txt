@@ -1,0 +1,9 @@
+sudo git clone https://github.com/shiyucoder/api.git
+cd api
+sudo npm install --unsafe-perm
+
+sudo npm install -g babel-cli
+
+change script in package.json
+
+"pm2 start --interpreter babel-node app.js"
