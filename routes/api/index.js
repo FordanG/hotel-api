@@ -6,7 +6,7 @@ import { roomRoutes } from "../../module/room/room.routes";
 const apiRoutes = express.Router();
 
 apiRoutes.get("/", function(req, res, next) {
-  res.json({ message: "from index api" });
+  res.json({ message: "Booking a hotel has never been easier" });
 });
 
 apiRoutes.use("/auth", crudRoutes);
